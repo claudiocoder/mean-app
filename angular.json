@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "aot": true,
             "outputPath": "dist/mean-course",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -33,12 +32,6 @@
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -131,8 +124,5 @@
       }
     }
   },
-  "defaultProject": "mean-course",
-  "cli": {
-    "analytics": "ea8233a6-af54-4e1a-827c-20881142777c"
-  }
+  "defaultProject": "mean-course"
 }
